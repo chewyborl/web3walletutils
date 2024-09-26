@@ -1,0 +1,54 @@
+{
+  "name": "web3walletutils",
+  "version": "0.0.1",
+  "description": "Utilities for Web3 wallets",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "exports": {
+    "./*.js": "./dist/*.js"
+  },
+  "scripts": {
+    "prepare": "tsc --build",
+    "prepare-uncommented": "// && npm-dts -o dist\\index.d.ts generate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chewyborl",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1",
+    "web3walletutils": "file:"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "typesVersions": {
+    "*": {
+      "*": [
+        "dist/*"
+      ],
+      "EIP6963Store": [
+        "dist/EIP6963Store"
+      ],
+      "EIP6963Types": [
+        "dist/EIP6963Types"
+      ]
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.9",
+    "typescript": "^5.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chewyborl/web3walletutils.git"
+  },
+  "keywords": [
+    "Web3",
+    "Wallet",
+    "Utilities"
+  ],
+  "bugs": {
+    "url": "https://github.com/chewyborl/web3walletutils/issues"
+  },
+  "homepage": "https://github.com/chewyborl/web3walletutils#readme"
+}
